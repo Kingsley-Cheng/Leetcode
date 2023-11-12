@@ -1,6 +1,6 @@
-// #include<string>
-// #include<map>
-// using  namespace std;
+#include<string>
+#include<unordered_map>
+using  namespace std;
 /*
  * @lc app=leetcode.cn id=3 lang=cpp
  *
@@ -11,7 +11,7 @@
 class Solution {
 public:
     int lengthOfLongestSubstring(string s) {
-        map<char,int> hashmap;
+        unordered_map<char,int> hashmap;
         int ans =0;
         for(int i=0, j=0; i<s.size(); ++i){
             if(hashmap.find(s[i]) == hashmap.end()){
