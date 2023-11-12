@@ -1,6 +1,6 @@
-// #include<map>
-// #include<vector>
-// using namespace std;
+#include<unordered_map>
+#include<vector>
+using namespace std;
 /*
  * @lc app=leetcode.cn id=1 lang=cpp
  *
@@ -13,7 +13,7 @@ class Solution
 public:
     vector<int> twoSum(vector<int> &nums, int target)
     {
-        map<int, int> Hashmap;
+        unordered_map<int, int> Hashmap;
         for (int i = 0; i < nums.size(); ++i)
         {
             if (Hashmap.find(target - nums[i]) == Hashmap.end())
